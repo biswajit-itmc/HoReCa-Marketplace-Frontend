@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 13% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 13% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 13% 15%;
+    --primary: 134 41% 31%;
+    --primary-foreground: 48 42% 95%;
+    --secondary: 48 42% 95%;
+    --secondary-foreground: 134 41% 31%;
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 134 41% 31%;
+    --accent-foreground: 48 42% 95%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 134 41% 31%;
+    --radius: 0.625rem;
+
+    --chart-1: 134 41% 31%;
+    --chart-2: 48 42% 87%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 197 37% 45%;
+    --chart-5: 280 65% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
