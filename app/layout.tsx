@@ -16,19 +16,29 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
+const siteUrl = 'https://horeca.itmcsoftware.com';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'HoReCa Connect — B2B Marketplace for Hospitality',
   description:
-    'Source trusted suppliers, professional equipment and hospitality products built for hotels, restaurants and cafés.',
+    "India's B2B marketplace connecting hospitality businesses with verified suppliers, professional equipment and hospitality products.",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
+    type: 'website',
+    url: siteUrl,
+    siteName: 'HoReCa Connect',
     title: 'HoReCa Connect — B2B Marketplace for Hospitality',
     description:
-      'Discover verified suppliers, professional equipment and hospitality products for your business.',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+      "India's B2B marketplace connecting hospitality businesses with verified suppliers and professional hospitality equipment.",
   },
   twitter: {
     card: 'summary_large_image',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+    title: 'HoReCa Connect — B2B Marketplace for Hospitality',
+    description:
+      "India's B2B marketplace connecting hospitality businesses with verified suppliers.",
   },
 };
 
